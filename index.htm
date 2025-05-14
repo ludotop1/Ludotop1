@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Top1 - বাংলাদেশের সেরা লুডো টুর্নামেন্ট অ্যাপ!</title>
+    <meta name="description" content="Ludo Top1 - বাংলাদেশের সবচেয়ে জনপ্রিয় এবং নির্ভরযোগ্য লুডো টুর্নামেন্ট অ্যাপ। সেরা গেমিং অভিজ্ঞতা, আকর্ষণীয় টুর্নামেন্ট এবং দ্রুত পেমেন্ট। এখনই ডাউনলোড করুন!">
+    <meta name="keywords" content="লুডো, লুডো টুর্নামেন্ট, অনলাইন লুডো, টাকা ইনকাম গেম, লুডো খেলে টাকা ইনকাম, Ludo Top1, সেরা লুডো অ্যাপ, বাংলাদেশ লুডো, Ludo tournament BD, earn money ludo game, 2v2 ludo, team ludo, custom ludo board, ludo chat, anti-cheat ludo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ludotop1.fun">
+    <meta property="og:title" content="Ludo Top1 - সেরা লুডো টুর্নামেন্ট অভিজ্ঞতা!">
+    <meta property="og:description" content="সেরা গ্রাফিক্স, মসৃণ গেমপ্লে এবং উত্তেজনাপূর্ণ টুর্নামেন্ট সহ Ludo Top1 খেলুন। Android, iPhone ও PC তে উপলব্ধ।">
+    <meta property="og:image" content="https://i.imgur.com/MoaCjf2.jpeg"> <!-- Updated OG Image for loader -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ludotop1.fun">
+    <meta property="twitter:title" content="Ludo Top1 - সেরা লুডো টুর্নামেন্ট অভিজ্ঞতা!">
+    <meta property="twitter:description" content="সেরা গ্রাফিক্স, মসৃণ গেমপ্লে এবং উত্তেজনাপূর্ণ টুর্নামেন্ট সহ Ludo Top1 খেলুন।">
+    <meta property="twitter:image" content="https://i.imgur.com/MoaCjf2.jpeg"> <!-- Updated Twitter Image -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #00AFFF;
+            --secondary-color: #28C76F;
+            --accent-color: #FFD700;
+            --purple-accent: #7C3AED;
+            --deep-purple: #4A148C;
+            --ludo-red: #F44336;
+            --ludo-red-darker: #D32F2F;
+            --ludo-yellow: #FFEB3B;
+            --ludo-yellow-darker: #FBC02D;
+            --ludo-green: #4CAF50;
+            --ludo-green-darker: #388E3C;
+            --ludo-blue: #2196F3;
+            --ludo-blue-darker: #1976D2;
+            --bg-dark-primary: #0A0F1E;
+            --bg-dark-secondary: #141A32;
+            --text-on-dark-primary: #ECEFF1;
+            --text-on-dark-secondary: #B0BEC5;
+            --border-dark: #37474F;
+            --bg-light-card: #FFFFFF;
+            --text-on-light-primary: #263238;
+            --text-on-light-secondary: #546E7A;
+            --border-light: #CFD8DC;
+            --pure-white: #FFFFFF;
+            --features-bg: linear-gradient(140deg, #E0F2F1 0%, #B2DFDB 100%);
+            --stats-bg: linear-gradient(140deg, #FFF9C4 0%, #FFF59D 100%);
+            --video-gallery-bg: linear-gradient(140deg, #FCE4EC 0%, #F8BBD0 100%);
+            --game-moments-bg: linear-gradient(140deg, #E1F5FE 0%, #B3E5FC 100%);
+            --screenshots-bg: linear-gradient(135deg, var(--ludo-blue-darker) 0%, #0D47A1 100%);
+            --testimonials-bg: linear-gradient(140deg, #EDE7F6 0%, #D1C4E9 100%);
+            --faq-bg: linear-gradient(140deg, #F1F8E9 0%, #DCEDC8 100%);
+            --cta-bg: linear-gradient(60deg, var(--primary-color) 0%, var(--purple-accent) 100%);
+            --gradient-hero: linear-gradient(145deg, var(--bg-dark-secondary) 0%, var(--bg-dark-primary) 100%);
+            --gradient-text-title-animated: linear-gradient(120deg, var(--ludo-red), var(--accent-color), var(--ludo-green), var(--ludo-blue), var(--purple-accent), var(--primary-color), var(--ludo-red));
+            --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.1);
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --skew-angle: -1.8deg;
+            --header-height: 90px;
+            --accent-color-rgb: 255, 215, 0;
+            --primary-color-rgb: 0, 175, 255;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-padding-top: var(--header-height); }
+        body {
+            font-family: 'Poppins', sans-serif; margin: 0; padding: 0;
+            background-color: #EFF3F6; color: var(--text-on-light-primary);
+            line-height: 1.75; overflow-x: hidden; scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+        }
+        body.loading { overflow: hidden; }
+        body.menu-open { overflow-y: hidden; }
+
+        .premium-loader-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            display: flex; justify-content: center; align-items: center;
+            z-index: 10000; opacity: 1; visibility: visible;
+            transition: opacity 0.8s ease-out 0.5s, visibility 0.8s ease-out 0.5s;
+            overflow: hidden;
+            perspective: 1000px; /* For 3D effect on background image */
+        }
+        .premium-loader-overlay:not(.active) {
+            opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .premium-loader-bg-image {
+            position: absolute; top: -5%; left: -5%; width: 110%; height: 110%; /* Slightly larger for parallax */
+            background-image: url('https://i.imgur.com/MoaCjf2.jpeg');
+            background-size: cover;
+            background-position: center center;
+            z-index: 0;
+            transition: transform 0.2s ease-out; /* Smooth transition for parallax */
+            filter: brightness(0.6) blur(2px); /* Darken and blur for text readability */
+        }
+        /* Removed .ludo-elements-animation and its keyframes */
+
+        .premium-loader-content {
+            position: relative; z-index: 2; text-align: center;
+            color: var(--pure-white); padding: 28px 32px; max-width: 500px;
+            background-color: rgba(10, 15, 30, 0.75); /* Darker, slightly more transparent */
+            border-radius: var(--radius-lg);
+            box-shadow: 0 12px 45px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(var(--primary-color-rgb), 0.25);
+        }
+
+        .loader-step { display: none; animation: fadeInStepPremiumOriginal 0.9s ease-out forwards; }
+        .loader-step.active-step { display: block; }
+        @keyframes fadeInStepPremiumOriginal {
+            from { opacity: 0; transform: translateY(20px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        #step1 .salam-message { font-family: 'Baloo Da 2', cursive; font-size: 2.3em; font-weight: 600; margin-bottom: 12px; color: var(--text-on-dark-primary); }
+        #step1 .loader-brand-logo { font-family: 'Baloo Da 2', cursive; font-size: 5em; font-weight: 800; color: var(--pure-white); text-shadow: 0 0 18px rgba(255,255,255,0.45); }
+        #step1 .loader-brand-logo span { color: var(--accent-color); text-shadow: 0 0 15px var(--accent-color), 0 0 30px var(--accent-color); }
+        #step2 .exciting-news { padding: 20px 28px; background-color: rgba(var(--accent-color-rgb), 0.22); border-radius: var(--radius-lg); border: 1px solid var(--accent-color); display: inline-flex; align-items: center; gap: 14px; box-shadow: 0 0 30px rgba(var(--accent-color-rgb),0.18); margin-top: 12px; }
+        #step2 .exciting-news i { font-size: 2.4em; color: var(--accent-color); animation: tadaPremiumOriginal 1.8s ease-in-out infinite; }
+        #step2 .exciting-news p { font-size: 1.35em; font-weight: 600; margin: 0; color: var(--pure-white); }
+        @keyframes tadaPremiumOriginal { 0%{transform:scaleX(1)}10%,20%{transform:scale3d(.9,.9,.9) rotate(-4deg)}30%,50%,70%,90%{transform:scale3d(1.15,1.15,1.15) rotate(4deg)}40%,60%,80%{transform:scale3d(1.15,1.15,1.15) rotate(-4deg)}100%{transform:scaleX(1)} }
+        #step3 .main-welcome-message { font-family: 'Poppins', sans-serif; font-size: 1.65em; font-weight: 500; margin-bottom: 22px; color: var(--text-on-dark-primary); }
+        #step3 .quick-features { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px; font-size: 1.05em; color: var(--text-on-dark-secondary); }
+        #step3 .quick-features span { display: inline-flex; align-items: center; padding: 7px 15px; background-color: rgba(255,255,255,0.18); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.25); }
+        #step3 .quick-features i { margin-right: 12px; font-size: 1.25em; }
+        #step3 .quick-features span:nth-child(1) i { color: var(--ludo-red); }
+        #step3 .quick-features span:nth-child(2) i { color: var(--ludo-green); }
+        #step3 .quick-features span:nth-child(3) i { color: var(--ludo-blue); }
+        #step4 .final-loader-spinner { width: 60px; height: 60px; border: 7px solid rgba(255,255,255,0.25); border-top-color: var(--primary-color); border-right-color: var(--secondary-color); border-bottom-color: var(--accent-color); border-left-color: var(--purple-accent); border-radius: 50%; animation: finalSpinPremiumOriginal 1s linear infinite; margin: 0 auto 22px auto; }
+        @keyframes finalSpinPremiumOriginal { to { transform: rotate(360deg); } }
+        #step4 .final-loading-text { font-size: 1.1em; color: var(--text-on-dark-secondary); }
+
+        .main-content-wrapper { opacity: 0; transition: opacity 0.9s ease-in; }
+        body:not(.loading) .main-content-wrapper { opacity: 1; }
+
+        .container { max-width: 1160px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+        section { position: relative; padding: 100px 0; overflow: hidden; }
+
+        .textured-bg-dark { background-color: var(--bg-dark-secondary); position: relative; overflow: hidden; }
+        .textured-bg-dark::before { content: ""; position: absolute; top: 0; left: 0; width: 200%; height: 200%; opacity: 0.025; background-image: radial-gradient(var(--text-on-dark-primary) 0.3px, transparent 0.3px); background-size: 25px 25px; animation: subtleParticleMove 150s linear infinite; z-index: 0; }
+        @keyframes subtleParticleMove { 0% { transform: translate(0, 0); } 50% { transform: translate(-30px, 30px); } 100% { transform: translate(0, 0); } }
+
+        .angled-top::before, .angled-bottom::after { content: ''; position: absolute; left: 0; width: 100%; height: 80px; z-index: 1; transform: skewY(var(--skew-angle)); background: inherit; box-shadow: 0px 2px 8px rgba(0,0,0,0.02); }
+        .angled-top::before { top: -40px; transform-origin: 0 0; box-shadow: 0px -2px 8px rgba(0,0,0,0.02); }
+        .angled-bottom::after { bottom: -40px; transform-origin: 100% 0; transform: skewY(calc(var(--skew-angle) * -1)); }
+
+        .features { background: var(--features-bg); }
+        .stats { background: var(--stats-bg); }
+        .video-gallery { background: var(--video-gallery-bg); }
+        .game-moments { background: var(--game-moments-bg); }
+        .screenshots { background: var(--screenshots-bg); color: var(--pure-white); }
+        .testimonials { background: var(--testimonials-bg); }
+        .faq { background: var(--faq-bg); }
+        .cta { background: var(--cta-bg); color: var(--pure-white); }
+
+        .hero + .features.angled-top::before { background: var(--features-bg); }
+        .features + .stats.angled-top::before { background: var(--stats-bg); }
+        .stats + .video-gallery.angled-top::before { background: var(--video-gallery-bg); }
+        .video-gallery + .game-moments.angled-top::before { background: var(--game-moments-bg); }
+        .game-moments + .screenshots.angled-top::before { background: var(--screenshots-bg); }
+        .screenshots + .testimonials.angled-top::before { background: var(--testimonials-bg); }
+        .testimonials + .faq.angled-top::before { background: var(--faq-bg); }
+        .faq + .cta.angled-top::before { background: var(--cta-bg); }
+
+        h1, h2, h3 { font-family: 'Baloo Da 2', cursive; font-weight: 700; letter-spacing: 0.3px; }
+        h2 { text-align: center; font-size: 2.9em; margin-bottom: 65px; position: relative; z-index: 2; }
+        .section-dark h2, .screenshots h2, .cta h2 { color: var(--pure-white); text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        .section-light h2 { color: var(--text-on-light-primary); }
+        .stats h2, .video-gallery h2 { color: var(--ludo-blue-darker); }
+        .testimonials h2, .game-moments h2 { color: var(--ludo-green-darker); }
+        .faq h2 { color: var(--deep-purple); }
+
+        p { color: var(--text-on-light-secondary); font-size: 1.05em; line-height: 1.8; }
+        .section-dark p, .screenshots p, .cta p { color: var(--text-on-dark-secondary); opacity: 0.9; }
+        .hero p { font-size: 1.25em; color: var(--text-on-dark-secondary); text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+        .cta p { color: rgba(255,255,255,0.9); }
+
+        .feature-item, .stat-item, .video-item, .showcase-item-wrapper, .testimonial-item, .faq-item {
+            position: relative; z-index: 1;
+            background-color: var(--bg-light-card);
+            box-shadow: var(--shadow-md);
+        }
+        .feature-item:hover, .stat-item:hover, .video-item:hover, .showcase-item-wrapper:hover, .testimonial-item:hover, .faq-item:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        header { color: var(--text-on-dark-primary); padding: 18px 0; box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 1000; transition: background-color 0.3s ease; background-color: var(--bg-dark-secondary); }
+        header .header-container { display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1; }
+        .header-content { text-align: center; flex-grow: 1; }
+        header h1.ludo-title { margin: 0; font-size: 4.2em; font-weight: 800; position: relative; z-index: 1; display: inline-block; background-image: var(--gradient-text-title-animated); background-size: 600% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-fill-color: transparent; animation: title-subtle-float 5s ease-in-out infinite alternate, animated-text-gradient-smooth 10s linear infinite; transition: filter 0.3s ease; }
+        @keyframes animated-text-gradient-smooth { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+        @keyframes title-subtle-float { 0% { transform: translateY(0px) rotate(-0.1deg); } 100% { transform: translateY(-4px) rotate(0.1deg); } }
+        header h1.ludo-title span { display: inline-block; transition: transform 0.25s ease; }
+        header h1.ludo-title:hover { animation-play-state: paused; }
+        header h1.ludo-title span:hover { transform: scale(1.08) rotate(2deg) translateY(-3px); }
+        .header-content p { margin-top: 6px; font-size: 1.25em; font-weight: 500; color: var(--text-on-dark-secondary); text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+        .menu-toggle { display: none; background: transparent; border: none; padding: 10px; cursor: pointer; z-index: 1005; position: relative; width: 40px; height: 40px; margin-right: -10px; }
+        .menu-toggle span { display: block; width: 28px; height: 3px; background-color: var(--pure-white); margin: 5px 0; border-radius: 2px; transition: var(--transition-smooth); }
+        .menu-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        .main-nav { display: flex; align-items: center; }
+        .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        .main-nav li { margin-left: 25px; }
+        .main-nav a { color: var(--text-on-dark-secondary); text-decoration: none; font-weight: 500; font-size: 1em; padding: 8px 0; position: relative; transition: color 0.3s ease; }
+        .main-nav a:hover, .main-nav a:focus { color: var(--accent-color); }
+        .main-nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--accent-color); transition: width 0.3s ease; }
+        .main-nav a:hover::after, .main-nav a:focus::after { width: 100%; }
+        .hero { color: var(--pure-white); padding: 170px 0 150px 0; text-align: left; position: relative; overflow: hidden; background: var(--gradient-hero); }
+        .hero .container { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap-reverse; gap: 70px; }
+        .hero-content { flex: 1; min-width: 320px; max-width: 580px; z-index: 2; }
+        .hero-image { flex: 1; min-width: 300px; max-width: 420px; text-align: center; position: relative; z-index: 2; perspective: 1000px; border-radius: var(--radius-lg); overflow: hidden; background-color: #000; }
+        .hero-image video {
+            width: 100%; height: 100%; object-fit: cover; display: block;
+            box-shadow: var(--shadow-xl, 0 20px 45px rgba(0,0,0,0.15),0 12px 20px rgba(0,0,0,0.08));
+            transform-style: preserve-3d;
+            transition: transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275),box-shadow 0.4s ease-out,filter .8s ease-in-out;
+            animation: hero-img-subtle-float 5s ease-in-out infinite alternate,pulse-glow 4s ease-in-out infinite alternate;
+            position: relative; z-index: 1; border-radius: var(--radius-md);
+        }
+        .hero-image:hover video {
+            transform: scale(1.07) translateY(-15px) rotateY(8deg) rotateX(4deg) translateZ(20px);
+            box-shadow: 0 30px 60px rgba(0,0,0,.2),0 12px 25px rgba(0,0,0,.15),0 0 35px var(--primary-color-t,rgba(0,175,255,.15));
+            animation-play-state: paused;
+        }
+        @keyframes hero-img-subtle-float { 0% { transform: translateY(0) rotateX(-.3deg) rotateY(.3deg) } 100% { transform: translateY(-8px) rotateX(.8deg) rotateY(-.8deg) } }
+        @keyframes pulse-glow { 0% { filter: drop-shadow(0 6px 12px rgba(0,175,255,.25)) } 33% { filter: drop-shadow(0 8px 16px rgba(40,199,111,.3)) } 66% { filter: drop-shadow(0 7px 14px rgba(255,215,0,.25)) } 100% { filter: drop-shadow(0 6px 12px rgba(0,175,255,.25)) } }
+        .hero-image::before { content: ""; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right,transparent 0,rgba(255,255,255,.08) 45%,rgba(255,255,255,.08) 55%,transparent 100%); transform: skewX(-20deg); z-index: 3; animation: glassSheenRefined 4.5s ease-in-out infinite; animation-delay: .5s; pointer-events: none }
+        @keyframes glassSheenRefined { 0% { left: -100%; opacity: .5 } 50% { left: 150%; opacity: .7 } 100% { left: -100%; opacity: .5 } }
+        .hero-image::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(circle at 15% 20%,var(--ludo-blue) 1.5px,transparent 1.6px),radial-gradient(circle at 60% 30%,var(--ludo-green) 1px,transparent 1.1px),radial-gradient(circle at 85% 15%,var(--ludo-yellow-darker) 2px,transparent 2.1px),radial-gradient(circle at 30% 50%,var(--ludo-red) 1.2px,transparent 1.3px),radial-gradient(circle at 75% 60%,var(--accent-color) 1.8px,transparent 1.9px),radial-gradient(circle at 45% 80%,var(--purple-accent) 1px,transparent 1.1px),radial-gradient(circle at 5% 90%,var(--primary-color) 1.5px,transparent 1.6px),radial-gradient(circle at 50% 5%,rgba(255,255,255,.5) .8px,transparent .9px),radial-gradient(circle at 20% 70%,rgba(255,255,255,.4) .7px,transparent .8px),radial-gradient(circle at 90% 40%,rgba(255,255,255,.6) 1px,transparent 1.1px); background-repeat: repeat-y; background-size: 100% 300px; opacity: .25; z-index: 2; animation: fallColorsRefined 30s linear infinite; pointer-events: none; mix-blend-mode: overlay }
+        @keyframes fallColorsRefined { 0% { background-position: 0 0 } 100% { background-position: 0 300px } }
+        .hero h2 { color: var(--pure-white); font-size: 3.8em; margin-bottom: 18px; text-align: left; text-shadow: 0 2px 5px rgba(0,0,0,.3) }
+        .hero-buttons { margin-top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px }
+        .btn-download { display: inline-flex; align-items: center; justify-content: center; padding: 16px 32px; font-size: 1.15em; font-weight: 600; text-decoration: none; border-radius: var(--radius-full,999px); transition: var(--transition-smooth),transform .2s ease-out; position: relative; overflow: hidden; min-width: 320px; text-align: center; border: none; color: var(--pure-white); letter-spacing: .5px }
+        .btn-download i { margin-right: 10px; font-size: 1.15em; transition: transform .3s ease }
+        .btn-download:hover { transform: translateY(-5px) scale(1.02); box-shadow: var(--shadow-lg) }
+        .btn-download:hover i { transform: scale(1.1) rotate(-5deg) }
+        .btn-download:active { transform: translateY(-1px) scale(.98); box-shadow: var(--shadow-sm,0 2px 5px rgba(0,0,0,.05)); transition-duration: .1s }
+        .btn-download.primary { background: var(--android-btn-bg,var(--secondary-color)); animation: button-pulse-glow-primary 3.5s ease-in-out infinite alternate }
+        .btn-download.primary:hover { background: var(--android-btn-hover-bg,#23ad61); box-shadow: 0 8px 20px rgba(40,199,111,.35),0 0 15px var(--secondary-color) }
+        @keyframes button-pulse-glow-primary { 0% { box-shadow: 0 6px 12px rgba(40,199,111,var(--button-glow-opacity,.25)),0 0 4px var(--secondary-color-t,rgba(40,199,111,.15)) } 50% { box-shadow: 0 9px 18px rgba(40,199,111,calc(var(--button-glow-opacity,.25) + .1)),0 0 12px var(--secondary-color) } 100% { box-shadow: 0 6px 12px rgba(40,199,111,var(--button-glow-opacity,.25)),0 0 4px var(--secondary-color-t,rgba(40,199,111,.15)) } }
+        .btn-download.secondary { background: var(--iphone-btn-bg,var(--primary-color)); animation: button-pulse-glow-secondary 3.5s ease-in-out infinite alternate }
+        .btn-download.secondary:hover { background: var(--iphone-btn-hover-bg,#009bdd); box-shadow: 0 8px 20px rgba(0,175,255,.35),0 0 15px var(--primary-color) }
+        @keyframes button-pulse-glow-secondary { 0% { box-shadow: 0 6px 12px rgba(0,175,255,var(--button-glow-opacity,.25)),0 0 4px var(--primary-color-t,rgba(0,175,255,.15)) } 50% { box-shadow: 0 9px 18px rgba(0,175,255,calc(var(--button-glow-opacity,.25) + .1)),0 0 12px var(--primary-color) } 100% { box-shadow: 0 6px 12px rgba(0,175,255,var(--button-glow-opacity,.25)),0 0 4px var(--primary-color-t,rgba(0,175,255,.15)) } }
+        .btn-download.tertiary { background: var(--pc-btn-bg,var(--purple-accent)); animation: button-pulse-glow-tertiary 3.5s ease-in-out infinite alternate }
+        .btn-download.tertiary:hover { background: var(--pc-btn-hover-bg,#6d28d9); box-shadow: 0 8px 20px rgba(124,58,237,.35),0 0 15px var(--purple-accent) }
+        @keyframes button-pulse-glow-tertiary { 0% { box-shadow: 0 6px 12px rgba(124,58,237,var(--button-glow-opacity,.25)),0 0 4px var(--purple-accent-t,rgba(124,58,237,.15)) } 50% { box-shadow: 0 9px 18px rgba(124,58,237,calc(var(--button-glow-opacity,.25) + .1)),0 0 12px var(--purple-accent) } 100% { box-shadow: 0 6px 12px rgba(124,58,237,var(--button-glow-opacity,.25)),0 0 4px var(--purple-accent-t,rgba(124,58,237,.15)) } }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(290px,1fr)); gap: 35px; perspective: 1500px }
+        .feature-item { padding: 35px 25px; border-radius: var(--radius-lg); text-align: center; transition: var(--transition-smooth); border: 1px solid var(--border-light); overflow: hidden; transform-style: preserve-3d }
+        .feature-item:hover { transform: translateY(-10px) scale(1.03) rotateX(1.5deg) rotateY(1deg); border-color: var(--primary-color) }
+        .feature-item .icon { font-size: 2.6em; color: var(--pure-white); margin-bottom: 20px; display: inline-flex; align-items: center; justify-content: center; width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg,var(--primary-color),var(--secondary-color)); box-shadow: 0 6px 12px rgba(var(--primary-color-rgb),.2); transition: transform .35s var(--transition-bouncy,cubic-bezier(.175,.885,.32,1.275)),background .3s ease,box-shadow .3s ease }
+        .feature-item:hover .icon { transform: scale(1.15) translateY(-8px) rotate(-10deg); background: linear-gradient(135deg,var(--purple-accent),var(--accent-color)); box-shadow: 0 8px 18px rgba(var(--purple-accent-rgb,124,58,237),.25) }
+        .feature-item h3 { color: var(--text-on-light-primary); font-size: 1.3em; margin-bottom: 10px; font-weight: 600 }
+        .feature-item p { font-size: .95em; color: var(--text-on-light-secondary); line-height: 1.65 }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 30px; text-align: center; margin-top: 40px }
+        .stat-item { padding: 30px 20px; border-radius: var(--radius-lg); transition: var(--transition-smooth); border: 1px solid var(--border-light); overflow: hidden }
+        .stat-item:hover { transform: translateY(-8px) scale(1.02); border: 1px solid var(--accent-color); background: linear-gradient(135deg,var(--bg-light-card) 0,#fdfdff 100%) }
+        .stat-item .stat-icon { font-size: 2.8em; margin-bottom: 15px; display: inline-block; transition: transform .4s var(--transition-bouncy,cubic-bezier(.175,.885,.32,1.275)),color .3s ease }
+        .stat-item:nth-child(4n+1) .stat-icon { color: var(--ludo-red) }
+        .stat-item:nth-child(4n+2) .stat-icon { color: var(--ludo-yellow-darker) }
+        .stat-item:nth-child(4n+3) .stat-icon { color: var(--ludo-green) }
+        .stat-item:nth-child(4n+4) .stat-icon { color: var(--ludo-blue) }
+        .stat-item:hover .stat-icon { transform: rotateY(360deg) scale(1.08) }
+        .stat-number { font-size: 2.8em; font-weight: 700; color: var(--text-on-light-primary); margin-bottom: 8px; font-family: Poppins,sans-serif; min-height: 1.1em; display: inline-block; line-height: 1 }
+        .stat-item p { font-size: 1em; color: var(--text-on-light-secondary); margin: 0; font-weight: 500 }
+        .video-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 30px; margin-top: 20px }
+        .video-item { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); transition: var(--transition-smooth) }
+        .video-item:hover { transform: translateY(-8px) scale(1.015) }
+        .video-item-embed-container { position: relative; width: 100%; padding-bottom: 56.25%; /* 16:9 for landscape YouTube */ height: 0; overflow: hidden; background-color: #000; border-radius: var(--radius-lg) var(--radius-lg) 0 0 }
+        .video-item-embed-container.short { padding-bottom: 177.77% } /* Approx 9:16 for portrait Shorts */
+        .video-item-embed-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        }
+        .video-item-caption { padding: 15px 18px; text-align: center; font-weight: 600; font-size: 1.05em; color: var(--text-on-light-primary); background-color: hsla(0,0%,100%,.8); border-top: 1px solid var(--border-light) }
+        .video-gallery>.container>p { text-align: center; margin-top: 35px; font-size: 1.1em; color: var(--text-on-light-secondary); font-weight: 500 }
+        /* Rest of the CSS (game-moments, screenshots, modal, testimonials, faq, cta, footer, floating buttons, focus, responsive) remains the same */
+        .game-moments-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 40px; margin-top: 30px }
+        .showcase-item-wrapper { perspective: 1000px; border-radius: var(--radius-lg); overflow: hidden; transition: box-shadow var(--transition-smooth) }
+        .showcase-image { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); transform-style: preserve-3d; transition: transform .4s var(--transition-bouncy,cubic-bezier(.175,.885,.32,1.275)),filter .4s ease-in-out; animation: showcase-subtle-float 6s ease-in-out infinite alternate,showcase-pulse-glow 5s ease-in-out infinite alternate; position: relative; z-index: 1 }
+        .showcase-item-wrapper:hover .showcase-image { transform: scale(1.07) translateY(-12px) rotateY(6deg) rotateX(3deg) translateZ(18px); animation-play-state: paused }
+        @keyframes showcase-subtle-float { 0% { transform: translateY(0) rotateX(-.1deg) rotateY(.1deg) translateZ(0) } 100% { transform: translateY(-6px) rotateX(.5deg) rotateY(-.5deg) translateZ(2px) } }
+        @keyframes showcase-pulse-glow { 0% { filter: drop-shadow(0 4px 8px var(--primary-color-t,rgba(0,175,255,.15))) } 50% { filter: drop-shadow(0 6px 12px var(--secondary-color-t,rgba(40,199,111,.15))) } 100% { filter: drop-shadow(0 4px 8px var(--primary-color-t,rgba(0,175,255,.15))) } }
+        .screenshot-gallery { display: flex; overflow-x: auto; gap: 25px; padding: 25px 15px; scrollbar-width: thin; scrollbar-color: var(--accent-color) hsla(0,0%,100%,.1); -webkit-overflow-scrolling: touch }
+        .screenshot-gallery::-webkit-scrollbar { height: 8px }
+        .screenshot-gallery::-webkit-scrollbar-track { background: hsla(0,0%,100%,.1); border-radius: var(--radius-full,999px) }
+        .screenshot-gallery::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: var(--radius-full,999px); border: 1px solid hsla(0,0%,100%,.1) }
+        .screenshot-gallery::-webkit-scrollbar-thumb:hover { background: #ffc700 }
+        .screenshot-gallery img { width: 260px; height: auto; border-radius: var(--radius-md,10px); transition: var(--transition-smooth); cursor: pointer; border: 2px solid transparent; flex-shrink: 0 }
+        .screenshot-gallery img:hover { transform: scale(1.06) translateY(-6px); border-color: var(--accent-color) }
+        .modal { display: none; position: fixed; z-index: 1050; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(10,25,47,.95); backdrop-filter: blur(6px); align-items: center; justify-content: center }
+        .modal.active { display: flex; animation: fadeInModal .25s ease-out }
+        @keyframes fadeInModal { 0% { opacity: 0 } 100% { opacity: 1 } }
+        .modal-content { margin: auto; display: block; max-width: 90%; max-height: 85vh; border: none; box-shadow: var(--shadow-xl,0 20px 45px rgba(0,0,0,.15),0 12px 20px rgba(0,0,0,.08)); animation: zoomInModalContent .35s cubic-bezier(.175,.885,.32,1.275); border-radius: var(--radius-sm,6px) }
+        @keyframes zoomInModalContent { 0% { transform: scale(.7); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+        .modal-close { position: absolute; top: 15px; right: 30px; color: #e0e0e0; font-size: 40px; font-weight: 700; transition: var(--transition-smooth); cursor: pointer; z-index: 1060; opacity: .8; text-shadow: 0 0 6px rgba(0,0,0,.4) }
+        .modal-close:focus,.modal-close:hover { color: var(--accent-color); text-decoration: none; cursor: pointer; opacity: 1; transform: scale(1.15) rotate(90deg) }
+        .testimonial-item { padding: 35px 40px; margin: 30px auto; max-width: 720px; border-radius: var(--radius-lg); border-left: 5px solid var(--secondary-color); transition: var(--transition-smooth) }
+        .testimonial-item:hover { transform: translateY(-8px) scale(1.005); border-left-color: var(--primary-color) }
+        .testimonial-item::before { content: "\f10d"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 20px; left: -22px; font-size: 3.5em; color: var(--secondary-color); opacity: .08; transform: rotate(-4deg); z-index: 0; transition: color .3s ease,opacity .3s ease,transform .3s ease }
+        .testimonial-item:hover::before { color: var(--primary-color); opacity: .12; transform: rotate(-6deg) scale(1.08) }
+        .testimonial-item p { font-style: italic; color: var(--text-on-light-primary); margin-bottom: 20px; font-size: 1.15em; line-height: 1.75; position: relative; z-index: 1 }
+        .testimonial-item .author { font-weight: 600; color: var(--text-on-light-primary); font-size: 1.05em; text-align: right; margin-top: 15px; position: relative; z-index: 1 }
+        .testimonial-item .author::before { content: ""; display: block; width: 40px; height: 2px; background-color: var(--secondary-color); margin: 0 0 8px auto; transition: background-color .3s ease }
+        .testimonial-item:hover .author::before { background-color: var(--primary-color) }
+        .faq-item { margin-bottom: 15px; border: 1px solid var(--border-light); border-radius: var(--radius-md,10px); overflow: hidden; transition: var(--transition-smooth) }
+        .faq-item:hover { border-color: var(--purple-accent) }
+        .faq-question { background-color: transparent; padding: 18px 25px; cursor: pointer; font-weight: 600; color: var(--text-on-light-primary); display: flex; justify-content: space-between; align-items: center; transition: background-color .2s ease,color .2s ease; font-size: 1.05em; border-bottom: 1px solid transparent }
+        .faq-question:hover { background-color: hsla(0,0%,100%,.7); color: var(--purple-accent) }
+        .faq-question i.fas { transition: transform .3s cubic-bezier(.4,0,.2,1),color .2s ease; color: var(--purple-accent); font-size: .9em }
+        .faq-question.active { background-color: hsla(0,0%,100%,.7); border-bottom-color: var(--border-light); color: var(--purple-accent) }
+        .faq-question.active i.fas { transform: rotate(180deg) }
+        .faq-answer { color: var(--text-on-light-secondary); max-height: 0; overflow: hidden; transition: max-height .4s ease-in-out,padding .4s ease-in-out,border-top .4s ease; padding: 0 25px; border-top: 1px solid transparent }
+        .faq-answer.active-answer { max-height: 380px; padding-top: 18px; padding-bottom: 22px; border-top-color: var(--border-light) }
+        .faq-answer p { margin-bottom: 8px; font-size: .98em; line-height: 1.75 }
+        .faq-answer a { color: var(--primary-color); text-decoration: none; font-weight: 500; border-bottom: 1px dotted var(--primary-color); transition: var(--transition-smooth) }
+        .faq-answer a:hover { color: var(--iphone-btn-hover-bg,#009bdd); border-bottom-style: solid; background-color: var(--primary-color-t,rgba(0,175,255,.15)); padding: 1px 3px; margin: -1px -3px; border-radius: var(--radius-sm,6px) }
+        .cta p { color: hsla(0,0%,100%,.9) }
+        .cta .btn-download { text-shadow: none; padding: 18px 40px; font-size: 1.2em; animation: cta-button-pulse-glow 3.5s ease-in-out infinite alternate }
+        @keyframes cta-button-pulse-glow { 0% { box-shadow: var(--shadow-md),0 0 8px hsla(0,0%,100%,.3) } 50% { box-shadow: var(--shadow-lg),0 0 20px hsla(0,0%,100%,.65) } 100% { box-shadow: var(--shadow-md),0 0 8px hsla(0,0%,100%,.3) } }
+        .cta .btn-download:hover { background: var(--cta-btn-hover-bg,#f0faff); color: var(--cta-btn-hover-text,var(--iphone-btn-hover-bg,#009bdd)); box-shadow: var(--shadow-lg),0 0 25px hsla(0,0%,100%,.75); transform: translateY(-6px) scale(1.025) }
+        .cta .btn-download:active { transform: translateY(-1px) scale(.98); box-shadow: var(--shadow-sm,0 2px 5px rgba(0,0,0,.05)) }
+        @keyframes cta-gradient-animation { 0% { background-position: 0% 50% } 50% { background-position: 100% 50% } 100% { background-position: 0% 50% } }
+        .cta::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 15% 25%,hsla(0,0%,100%,.05) 0,transparent 38%),radial-gradient(circle at 80% 30%,hsla(0,0%,100%,.03) 0,transparent 30%),radial-gradient(circle at 50% 85%,hsla(0,0%,100%,.04) 0,transparent 33%); background-repeat: no-repeat; animation: ctaEnhancedBokeh 28s cubic-bezier(.45,.05,.55,.95) infinite alternate; z-index: 0 }
+        @keyframes ctaEnhancedBokeh { 0% { background-position: 15% 25%,80% 30%,50% 85%; transform: scale(1) rotate(0deg); opacity: .5 } 50% { opacity: .8 } 100% { background-position: 25% 15%,70% 80%,85% 50%; transform: scale(1.12) rotate(4deg); opacity: .4 } }
+        footer { text-align: center; padding: 45px 0; color: var(--text-on-dark-secondary); font-size: .9em; margin-top: 0; position: relative; z-index: 1; overflow: hidden; border-top: 1px solid var(--border-dark); background-color: var(--bg-dark-secondary) }
+        footer .container { position: relative; z-index: 1 }
+        footer p { margin: 0 0 20px; font-size: .9em; color: var(--text-on-dark-tertiary) }
+        .social-links a { color: var(--text-on-dark-tertiary); font-size: 1.7em; margin: 0 12px; text-decoration: none; transition: var(--transition-smooth); display: inline-block }
+        .social-links a:hover { color: var(--primary-color); transform: translateY(-4px) scale(1.12) rotate(-4deg) }
+        .floating-action-buttons { position: fixed; bottom: 120px; right: 22px; z-index: 999; display: flex; flex-direction: column-reverse; gap: 12px; align-items: flex-end }
+        .floating-btn-wrapper { display: flex; align-items: center; gap: 10px }
+        .floating-btn { width: 58px; height: 58px; border-radius: 50%; color: #fff; text-align: center; font-size: 26px; box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition-smooth); border: none; cursor: pointer; flex-shrink: 0 }
+        .floating-btn:hover { transform: scale(1.12) translateY(-3px); box-shadow: var(--shadow-lg) }
+        .floating-btn:active { transform: scale(1.06) translateY(-1px) }
+        .floating-btn-text { background-color: var(--bg-dark-secondary); color: var(--pure-white); padding: 7px 14px; border-radius: var(--radius-md,10px); font-size: .85em; font-weight: 500; font-family: Poppins,sans-serif; white-space: nowrap; transition: opacity .35s ease,transform .35s ease; box-shadow: var(--shadow-sm,0 2px 5px rgba(0,0,0,.05)); opacity: 0; transform: translateX(12px); pointer-events: none }
+        .floating-btn-wrapper:hover .floating-btn-text { opacity: 1; transform: translateX(0); pointer-events: auto }
+        .whatsapp-btn { background: linear-gradient(45deg,#25d366,#128c7e) }
+        .whatsapp-btn:hover { background: linear-gradient(45deg,#1eda5f,#0f7363) }
+        .telegram-btn { background: linear-gradient(45deg,#0088cc,#005a8a) }
+        .telegram-btn:hover { background: linear-gradient(45deg,#0099e0,#004a6e) }
+        /* Focus visible styles and media queries remain the same */
+        a:focus-visible,button:focus-visible,.faq-question:focus-visible,.gallery-image:focus-visible,.showcase-item-wrapper:focus-visible .showcase-image { outline: 2px solid var(--primary-color); outline-offset: 2px; box-shadow: var(--focus-shadow,0 0 0 3px rgba(0,175,255,.4)) }
+        .hero-image video:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; box-shadow: var(--shadow-xl,0 20px 45px rgba(0,0,0,.15),0 12px 20px rgba(0,0,0,.08)),0 0 0 3px var(--primary-color-t,rgba(0,175,255,.15)); border-radius: var(--radius-lg) }
+        .showcase-item-wrapper:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 2px; box-shadow: var(--focus-shadow,0 0 0 3px rgba(0,175,255,.4)); border-radius: var(--radius-lg) }
+        .btn-download:focus-visible { border-radius: var(--radius-full,999px); animation-play-state: paused }
+        .floating-btn:focus-visible { border-radius: 50%; outline: 2px solid var(--primary-color); outline-offset: 1px }
+        .gallery-image:focus-visible { outline-color: var(--accent-color); box-shadow: 0 0 0 3px rgba(255,215,0,.5); border-radius: var(--radius-lg) }
+        .faq-question:focus-visible { outline: 0; background-color: hsla(0,0%,100%,.7); box-shadow: inset 0 0 0 2px var(--purple-accent); border-radius: var(--radius-md,10px) }
+        header h1.ludo-title:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; border-radius: var(--radius-sm,6px); animation-play-state: paused }
+        .menu-toggle:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; border-radius: var(--radius-sm,6px) }
+        .main-nav a:focus-visible { outline: 2px solid var(--accent-color); outline-offset: -2px; border-radius: var(--radius-sm,6px) }
+        .main-nav a:focus-visible::after { width: 100% }
+        @media (max-width:1024px) { .menu-toggle { display: block }
+            .main-nav { position: fixed; top: 0; right: -300px; width: 300px; height: 100vh; background-color: var(--bg-dark-secondary); padding-top: calc(var(--header-height) + 20px); box-shadow: -5px 0 15px rgba(0,0,0,.2); transition: right .35s var(--transition-smooth); z-index: 1003; overflow-y: auto }
+            .main-nav.active { right: 0 }
+            .main-nav ul { flex-direction: column; padding: 20px }
+            .main-nav li { margin: 0; width: 100% }
+            .main-nav a { display: block; padding: 15px 20px; font-size: 1.1em; border-bottom: 1px solid var(--border-dark); color: var(--text-on-dark-primary) }
+            .main-nav a:focus,.main-nav a:hover { background-color: var(--bg-dark-primary); color: var(--accent-color) }
+            .main-nav a::after { display: none }
+            .main-nav li:last-child a { border-bottom: none }
+            .premium-loader-content { max-width: 90% }
+            #step1 .loader-brand-logo { font-size: 4em }
+            #step3 .quick-features { gap: 12px } }
+        @media (max-width:992px) { .container { max-width: 920px }
+            :root { --header-height: 90px }
+            header h1.ludo-title { font-size: 3.8em }
+            .header-content p { font-size: 1.15em }
+            h2 { font-size: 2.6em; margin-bottom: 55px }
+            .hero { padding-top: 140px; padding-bottom: 120px }
+            .hero h2 { font-size: 3.2em; text-align: center }
+            .hero p { font-size: 1.15em; text-align: center; max-width: 550px; margin-left: auto; margin-right: auto }
+            .btn-download { min-width: 300px; font-size: 1.1em; padding: 15px 30px }
+            .cta h2,.faq h2,.features h2,.game-moments h2,.screenshots h2,.stats h2,.testimonials h2,.video-gallery h2 { font-size: 2.4em }
+            .screenshot-gallery img { width: 240px }
+            .angled-bottom::after,.angled-top::before { height: 70px }
+            .angled-top::before { top: -35px }
+            .angled-bottom::after { bottom: -35px }
+            .testimonial-item::before { font-size: 3.2em; top: 20px; left: -20px }
+            .hero-image { max-width: 360px }
+            .game-moments-grid { grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 35px }
+            .video-gallery-grid { grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 25px } }
+        @media (max-width:768px) { :root { --header-height: 80px }
+            header h1.ludo-title { font-size: 3.2em }
+            .hero { padding-top: 90px; padding-bottom: 70px }
+            .hero h2 { font-size: 2.8em }
+            .hero p { font-size: 1.1em }
+            .hero .container { gap: 50px }
+            .hero-image { max-width: 320px }
+            .btn-download { max-width: 320px; min-width: 280px; font-size: 1.05em; padding: 14px 28px }
+            .feature-list,.stats-grid { gap: 25px }
+            .stats-grid { grid-template-columns: repeat(auto-fit,minmax(190px,1fr)) }
+            .stat-number { font-size: 2.4em }
+            .screenshot-gallery img { width: 200px }
+            .game-moments-grid { grid-template-columns: 1fr; gap: 30px }
+            .video-gallery-grid { grid-template-columns: 1fr; gap: 25px }
+            .floating-action-buttons { bottom: 90px; right: 20px; gap: 12px }
+            .floating-btn { width: 55px; height: 55px; font-size: 26px }
+            .floating-btn-text { display: none!important }
+            .angled-bottom::after,.angled-top::before { height: 60px; transform: skewY(-1.8deg) }
+            .angled-top::before { top: -30px }
+            .angled-bottom::after { bottom: -30px; transform: skewY(1.8deg) }
+            section { padding: 85px 0 }
+            h2 { font-size: 2.2em; margin-bottom: 45px }
+            .cta h2 { font-size: 2.5em }
+            .testimonial-item { padding: 30px 25px }
+            .testimonial-item::before { font-size: 2.8em; top: 15px; left: -15px }
+            .main-nav { width: 280px; right: -280px }
+            #step1 .loader-brand-logo { font-size: 3.5em }
+            #step1 .salam-message { font-size: 1.8em }
+            #step2 .exciting-news p { font-size: 1.1em }
+            #step2 .exciting-news i { font-size: 1.8em }
+            #step3 .main-welcome-message { font-size: 1.3em }
+            #step3 .quick-features { font-size: .9em; gap: 10px }
+            #step4 .final-loader-spinner { width: 45px; height: 45px }
+            #step4 .final-loading-text { font-size: .95em } }
+        @media (max-width:576px) { :root { --header-height: 70px }
+            header .header-container { padding-left: 10px; padding-right: 10px }
+            header h1.ludo-title { font-size: 2.5em }
+            .header-content p { font-size: .9em }
+            .hero { padding-top: 70px; padding-bottom: 60px }
+            h2 { font-size: 2em; margin-bottom: 40px }
+            .hero h2 { font-size: 2.4em }
+            .hero p { font-size: 1em }
+            .hero-image { max-width: 280px }
+            .btn-download { font-size: 1em; padding: 14px 25px; min-width: auto; max-width: 280px; width: 100% }
+            .hero-buttons { align-items: center }
+            .cta h2,.faq h2,.features h2,.game-moments h2,.screenshots h2,.stats h2,.testimonials h2,.video-gallery h2 { font-size: 2em }
+            .feature-list { grid-template-columns: 1fr; gap: 20px }
+            .feature-item { padding: 30px 20px }
+            .stats-grid { grid-template-columns: 1fr; gap: 18px }
+            .stat-number { font-size: 2.2em }
+            .screenshot-gallery { gap: 15px; padding: 20px 10px }
+            .screenshot-gallery img { width: 160px; border-width: 1.5px }
+            .game-moments-grid { gap: 25px }
+            .testimonial-item { padding: 25px 20px }
+            .testimonial-item p { font-size: 1em }
+            .testimonial-item::before { font-size: 2.5em; top: 10px; left: -12px }
+            .faq-question { padding: 16px 20px; font-size: .95em }
+            .faq-answer { padding-left: 20px; padding-right: 20px; font-size: .9em }
+            .cta h2 { font-size: 2.1em }
+            .cta p { font-size: 1em }
+            .social-links a { font-size: 1.6em; margin: 0 8px }
+            .angled-bottom::after,.angled-top::before { height: 50px; transform: skewY(-1.5deg) }
+            .angled-top::before { top: -25px }
+            .angled-bottom::after { bottom: -25px; transform: skewY(1.5deg) }
+            .floating-action-buttons { bottom: 85px; right: 15px }
+            .main-nav { width: 250px; right: -250px }
+            #step1 .loader-brand-logo { font-size: 3em }
+            #step1 .salam-message { font-size: 1.6em }
+            #step2 .exciting-news p { font-size: 1em }
+            #step2 .exciting-news i { font-size: 1.6em }
+            #step3 .main-welcome-message { font-size: 1.2em }
+            #step3 .quick-features { font-size: .85em; gap: 8px }
+            #step3 .quick-features span { padding: 4px 8px }
+            #step4 .final-loader-spinner { width: 40px; height: 40px }
+            #step4 .final-loading-text { font-size: .9em } }
+        div[id^=tawkchat-container],div[id^=tawk-bubble-container],body>iframe[title="Tawk Chat Widget"],body>div[style*=tawk\.to] { position: fixed!important; bottom: 20px!important; left: 20px!important; right: auto!important; top: auto!important; z-index: 1000!important }
+
+    </style>
+</head>
+<body class="loading">
+
+    <div class="premium-loader-overlay active">
+        <div class="premium-loader-bg-image"></div>
+        <div class="premium-loader-content">
+            <div class="loader-step" id="step1">
+                <p class="salam-message">আসসালামু আলাইকুম</p>
+                <div class="loader-brand-logo">LUDO<span>TOP1</span></div>
+            </div>
+            <div class="loader-step" id="step2">
+                <div class="exciting-news">
+                    <i class="fas fa-bullhorn"></i>
+                    <p>খুশির খবর! নতুন টুর্নামেন্ট শীঘ্রই!</p>
+                </div>
+            </div>
+            <div class="loader-step" id="step3">
+                <p class="main-welcome-message">Ludo Top1 পরিবারে আপনাকে স্বাগতম!</p>
+                <div class="quick-features">
+                    <span><i class="fas fa-trophy"></i> সেরা টুর্নামেন্ট</span>
+                    <span><i class="fas fa-bolt"></i> দ্রুত গেমিং</span>
+                    <span><i class="fas fa-shield-alt"></i> নিরাপদ পেমেন্ট</span>
+                </div>
+            </div>
+            <div class="loader-step" id="step4">
+                <div class="final-loader-spinner"></div>
+                <p class="final-loading-text">আপনার সেরা অভিজ্ঞতার জন্য প্রস্তুত হচ্ছে...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content-wrapper">
+        <header class="textured-bg-dark">
+            <div class="container header-container">
+                <div class="header-content">
+                    <h1 class="ludo-title">
+                        <span>L</span><span>U</span><span>D</span><span>O</span><span> </span><span>T</span><span>O</span><span>P</span><span>1</span>
+                    </h1>
+                    <p>বাংলাদেশের সেরা অনলাইন লুডো টুর্নামেন্ট প্ল্যাটফর্ম</p>
+                </div>
+                <button class="menu-toggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#hero-section">হোম</a></li>
+                        <li><a href="#features">কেন সেরা?</a></li>
+                        <li><a href="#stats-section">অর্জন</a></li>
+                        <li><a href="#video-gallery">ভিডিও গ্যালারি</a></li>
+                        <li><a href="#game-moments">খেলার মুহূর্ত</a></li>
+                        <li><a href="#screenshots">স্ক্রিনশট</a></li>
+                        <li><a href="#testimonials">খেলোয়াড়দের মতামত</a></li>
+                        <li><a href="#faq">সাধারণ জিজ্ঞাসা</a></li>
+                        <li><a href="#cta-section">ডাউনলোড</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero textured-bg-dark" id="hero-section">
+                <div class="container">
+                     <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
+                        <video autoplay loop muted playsinline tabindex="0" poster="https://i.imgur.com/jjqr8w9.jpeg" preload="auto">
+                            <source src="https://i.imgur.com/zWv9YF4.mp4" type="video/mp4">
+                            Ludo Top1 খেলার অ্যানিমেশন। আপনার ব্রাউজার ভিডিও ট্যাগ সাপোর্ট করে না।
+                            বিকল্প হিসেবে এই ছবিটি দেখুন: <img src="https://i.imgur.com/jjqr8w9.jpeg" alt="Ludo Top1 - বন্ধুরা মিলে লুডো খেলছে" style="max-width: 100%; height: auto; display: block;">
+                        </video>
+                    </div>
+                    <div class="hero-content" data-aos="fade-left" data-aos-delay="100">
+                        <h2>খেলুন, জিতুন এবং আয় করুন!</h2>
+                        <p>Ludo Top1 এ স্বাগতম! সেরা গ্রাফিক্স, রোমাঞ্চকর মাল্টিপ্লেয়ার টুর্নামেন্ট এবং নির্ভরযোগ্য গেমিং অভিজ্ঞতার জন্য এখনই যোগ দিন।</p>
+                        <div class="hero-buttons">
+                            <a href="https://ludotop1.fun/Ludo%20Top1.apk" class="btn-download primary" download="Ludo Top1.apk" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-android"></i> Android অ্যাপ ডাউনলোড</a>
+                            <a href="https://user.ludotop1.fun/login.php" class="btn-download secondary" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-apple"></i> iPhone ব্যবহারকারী?</a>
+                            <a href="https://user.ludotop1.fun/login.php" class="btn-download tertiary" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="500"><i class="fas fa-desktop"></i> PC/Laptop থেকে খেলুন</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section-light angled-top" id="features">
+                <div class="container">
+                    <h2 data-aos="fade-up">কেন Ludo Top1 সেরা?</h2>
+                    <div class="feature-list">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="100"> <div class="icon"><i class="fas fa-bolt"></i></div> <h3>দ্রুত ও মসৃণ গেমিং</h3> <p>কোনো ল্যাগ ছাড়াই সুপার ফাস্ট অনলাইন লুডো উপভোগ করুন।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="150"> <div class="icon"><i class="fas fa-users"></i></div> <h3>মাল্টিপ্লেয়ার টুর্নামেন্ট</h3> <p>অন্যান্য খেলোয়াড়দের সাথে প্রতিযোগিতামূলক টুর্নামেন্টে অংশ নিন।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="200"> <div class="icon"><i class="fas fa-user-friends"></i></div> <h3>টিম-আপ মোড (2v2)</h3> <p>বন্ধুদের সাথে জুটি বেঁধে খেলুন রোমাঞ্চকর ২ বনাম ২ লুডো ম্যাচ!</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="250"> <div class="icon"><i class="fas fa-shield-alt"></i></div> <h3>নিরাপদ ও নির্ভরযোগ্য</h3> <p>ফেয়ার প্লে এবং দ্রুত পেমেন্টের নিশ্চয়তা। শক্তিশালী অ্যান্টি-চিট সিস্টেম।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="300"> <div class="icon"><i class="fas fa-headset"></i></div> <h3>২৪/৭ কাস্টমার সাপোর্ট</h3> <p>যেকোনো প্রয়োজনে আমাদের সাপোর্ট টিম সবসময় প্রস্তুত।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="350"> <div class="icon"><i class="fas fa-gift"></i></div> <h3>আকর্ষণীয় বোনাস</h3> <p>নিয়মিত লগইন এবং খেলায় অংশগ্রহণের মাধ্যমে বোনাস জিতুন।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="400"> <div class="icon"><i class="fas fa-palette"></i></div> <h3>কাস্টমাইজেশন</h3> <p>আপনার পছন্দ মতো লুডো বোর্ড ও গুটির ডিজাইন পরিবর্তন করুন।</p> </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="450"> <div class="icon"><i class="fas fa-comments"></i></div> <h3>ইন-গেম চ্যাট ও ইমোজি</h3> <p>খেলার সময় বন্ধুদের সাথে চ্যাট করুন এবং মজার ইমোজি পাঠান।</p> </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats angled-top" id="stats-section">
+                <div class="container">
+                    <h2 data-aos="fade-up">আমাদের অর্জন</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item" data-aos="zoom-in-up" data-aos-delay="100"> <i class="fas fa-users stat-icon"></i> <div class="stat-number" data-target="250000">0</div> <p>নিবন্ধিত খেলোয়াড়</p> </div>
+                        <div class="stat-item" data-aos="zoom-in-up" data-aos-delay="150"> <i class="fas fa-gamepad stat-icon"></i> <div class="stat-number" data-target="7500000">0</div> <p>মোট খেলা সম্পন্ন</p> </div>
+                        <div class="stat-item" data-aos="zoom-in-up" data-aos-delay="200"> <i class="fas fa-trophy stat-icon"></i> <div class="stat-number" data-target="150000">0</div> <p>টুর্নামেন্ট বিজয়ী</p> </div>
+                        <div class="stat-item" data-aos="zoom-in-up" data-aos-delay="250"> <i class="fas fa-star stat-icon"></i> <div class="stat-number" data-target="4.8" data-decimal="1">0.0</div> <p>গড় রেটিং</p> </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-gallery section-light angled-top" id="video-gallery">
+                <div class="container">
+                     <h2 data-aos="fade-up">গেমপ্লে, গান এবং অন্যান্য ভিডিও</h2>
+                     <div class="video-gallery-grid">
+                        <div class="video-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="video-item-embed-container">
+                                <iframe src="https://www.youtube.com/embed/VybjZeWLY2E?autoplay=0&mute=1&loop=1&playlist=VybjZeWLY2E&modestbranding=1&showinfo=0&rel=0&controls=1" title="Ludo Top1 Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="video-item-caption">Ludo Top1 গেমপ্লের ঝলক</div>
+                        </div>
+                        <div class="video-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="video-item-embed-container">
+                                <iframe src="https://www.youtube.com/embed/NJcWlgKADmk" title="Ludo Top 1 Official Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="video-item-caption">Ludo Top 1 অফিসিয়াল গান</div>
+                        </div>
+                         <div class="video-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="video-item-embed-container short"> <!-- `short` class for portrait aspect ratio -->
+                                <iframe 
+                                    src="https://www.youtube.com/embed/XcxiL1TJsxs?autoplay=1&mute=1&loop=1&playlist=XcxiL1TJsxs&controls=0&showinfo=0&modestbranding=1&rel=0" 
+                                    title="LudoTop1 Telegram Channel" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="video-item-caption">নতুন নতুন আপডেট ও টুর্নামেন্টের খবর পেতে আমাদের টেলিগ্রাম চ্যানেলে যোগ দিন!</div>
+                        </div>
+                        <div class="video-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="video-item-embed-container short"> <!-- `short` class for portrait aspect ratio -->
+                                <iframe 
+                                    src="https://www.youtube.com/embed/47kikWWT3uA?autoplay=1&mute=1&loop=1&playlist=47kikWWT3uA&controls=0&showinfo=0&modestbranding=1&rel=0" 
+                                    title="LudoTop1 WhatsApp Support" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="video-item-caption">যেকোনো সমস্যা বা সাহায্যের জন্য আমাদের সাথে সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করুন।</div>
+                        </div>
+                        <div class="video-item" data-aos="fade-up" data-aos-delay="500"> <!-- আগের অ্যাড ভিডিও -->
+                            <div class="video-item-embed-container short">
+                                <iframe src="https://www.youtube.com/embed/T5Z38Y3OXiE" title="Ludo Top 1 Official Add" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="video-item-caption">Ludo Top 1 অফিসিয়াল বিজ্ঞাপন</div>
+                        </div>
+                     </div>
+                     <p>Ludo Top1 অ্যাপের অভিজ্ঞতা নিতে ভিডিওগুলো দেখুন। অটো-প্লে ভিডিওগুলো শব্দহীনভাবে চলবে।</p>
+                </div>
+            </section>
+
+            <section class="game-moments section-light angled-top" id="game-moments">
+                <div class="container">
+                    <h2 data-aos="fade-up">খেলার সেরা মুহূর্ত</h2>
+                    <div class="game-moments-grid">
+                        <div class="showcase-item-wrapper" data-aos="fade-up" data-aos-delay="100" tabindex="0"> <img src="https://i.imgur.com/5fU9cAz.jpeg" alt="লুডো বোর্ডে চারজন খেলোয়াড় - Ludo Top1" class="showcase-image"> </div>
+                        <div class="showcase-item-wrapper" data-aos="fade-up" data-aos-delay="200" tabindex="0"> <img src="https://i.imgur.com/Lv3Mbg4.jpeg" alt="একজন খেলোয়াড় লুডো খেলায় মগ্ন - Ludo Top1" class="showcase-image"> </div>
+                        <div class="showcase-item-wrapper" data-aos="fade-up" data-aos-delay="300" tabindex="0"> <img src="https://i.imgur.com/pPXBKMY.jpeg" alt="Ludo Top1 অ্যাপের লোগো ও বোর্ড" class="showcase-image"> </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="screenshots section-dark angled-top" id="screenshots">
+                <div class="container">
+                    <h2 data-aos="fade-up">অ্যাপ ইন্টারফেস</h2>
+                    <div class="screenshot-gallery" data-aos="fade-left">
+                        <img src="https://i.imgur.com/1tjEJ3V.jpeg" alt="Ludo Top1 App Screenshot 1 - Main Menu" loading="lazy" class="gallery-image" tabindex="0">
+                        <img src="https://i.imgur.com/0CdRONn.jpeg" alt="Ludo Top1 App Screenshot 2 - Gameplay" loading="lazy" class="gallery-image" tabindex="0">
+                        <img src="https://i.imgur.com/CZVq8dM.jpeg" alt="Ludo Top1 App Screenshot 3 - Profile" loading="lazy" class="gallery-image" tabindex="0">
+                        <img src="https://i.imgur.com/gJPtRCP.jpeg" alt="Ludo Top1 App Screenshot 4 - Game Board" loading="lazy" class="gallery-image" tabindex="0">
+                     </div>
+                </div>
+            </section>
+            <div id="imageModal" class="modal"> <span class="modal-close" id="modalCloseBtn" tabindex="0">×</span> <img class="modal-content" id="modalImage" alt="Expanded Screenshot"> </div>
+
+            <section class="testimonials section-light angled-top" id="testimonials">
+                <div class="container">
+                    <h2 data-aos="fade-up">খেলোয়াড়রা যা বলছেন</h2>
+                    <div data-aos="fade-right" data-aos-delay="100"> <div class="testimonial-item"> <p>"Ludo Top1 ব্যবহার করা খুবই সহজ এবং টুর্নামেন্টগুলো দারুণ উত্তেজনাপূর্ণ। পেমেন্টও পেয়েছি খুব দ্রুত।"</p> <div class="author">- মোঃ আশিকুর রহমান</div> </div> </div>
+                    <div data-aos="fade-left" data-aos-delay="150"> <div class="testimonial-item"> <p>"অন্যান্য অ্যাপের চেয়ে Ludo Top1 অনেক বেশি নির্ভরযোগ্য। বন্ধুদের সাথে খেলার জন্য বেস্ট।"</p> <div class="author">- সুমাইয়া আক্তার</div> </div> </div>
+                    <div data-aos="fade-right" data-aos-delay="200"> <div class="testimonial-item"> <p>"গ্রাফিক্স এবং সাউন্ড কোয়ালিটি অসাধারণ। স্মুথ গেমপ্লের জন্য ধন্যবাদ Ludo Top1!"</p> <div class="author">- জাহিদ হাসান</div> </div> </div>
+                </div>
+            </section>
+
+             <section class="faq section-light angled-top" id="faq">
+                 <div class="container" data-aos="fade-up">
+                     <h2>সাধারণ জিজ্ঞাসা</h2>
+                     <div class="faq-item" data-aos="fade-up" data-aos-delay="100"> <div class="faq-question" role="button" aria-expanded="false" aria-controls="faq-answer-1" tabindex="0">অ্যাপটি কি ফ্রি? <i class="fas fa-chevron-down"></i></div> <div class="faq-answer" id="faq-answer-1" role="region"><p>হ্যাঁ, Ludo Top1 অ্যাপটি ডাউনলোড এবং খেলার জন্য সম্পূর্ণ ফ্রি। টুর্নামেন্টে অংশগ্রহণের জন্য নির্দিষ্ট এন্ট্রি ফি প্রযোজ্য হতে পারে।</p></div> </div>
+                     <div class="faq-item" data-aos="fade-up" data-aos-delay="150"> <div class="faq-question" role="button" aria-expanded="false" aria-controls="faq-answer-2" tabindex="0">টাকা উইথড্র করবো কিভাবে? <i class="fas fa-chevron-down"></i></div> <div class="faq-answer" id="faq-answer-2" role="region"><p>আপনি আপনার প্রোফাইল সেকশন থেকে উইথড্র অপশন ব্যবহার করে সহজেই বিকাশ, নগদ বা রকেটের মাধ্যমে টাকা তুলতে পারবেন। ন্যূনতম উইথড্র পরিমাণ এবং প্রসেসিং টাইম অ্যাপের মধ্যে উল্লেখ করা থাকবে।</p></div> </div>
+                     <div class="faq-item" data-aos="fade-up" data-aos-delay="200"> <div class="faq-question" role="button" aria-expanded="false" aria-controls="faq-answer-3" tabindex="0">সমস্যা হলে কিভাবে যোগাযোগ করবো? <i class="fas fa-chevron-down"></i></div> <div class="faq-answer" id="faq-answer-3" role="region"><p>যেকোনো সমস্যায় বা সাপোর্টের জন্য, আপনি আমাদের <a href="https://wa.me/8801325328613" target="_blank" rel="noopener noreferrer">WhatsApp</a> নম্বরে (+8801325328613), <a href="https://t.me/ludotop1fun" target="_blank" rel="noopener noreferrer">Telegram</a> চ্যানেলে (+ludotop1fun) অথবা ওয়েবসাইটের নিচের দিকে থাকা লাইভ চ্যাট অপশন ব্যবহার করেও যোগাযোগ করতে পারেন। আমরা দ্রুত সাহায্য করার চেষ্টা করবো।</p></div> </div>
+                     <div class="faq-item" data-aos="fade-up" data-aos-delay="250"> <div class="faq-question" role="button" aria-expanded="false" aria-controls="faq-answer-4" tabindex="0">টুর্নামেন্ট কিভাবে কাজ করে? <i class="fas fa-chevron-down"></i></div> <div class="faq-answer" id="faq-answer-4" role="region"><p>অ্যাপে বিভিন্ন এন্ট্রি ফি এবং পুরস্কার সহ নিয়মিত টুর্নামেন্ট আয়োজন করা হয়। আপনি আপনার পছন্দমত টুর্নামেন্টে জয়েন করতে পারবেন। প্রতিপক্ষের সাথে প্রতিযোগিতা করে জিতলে নির্ধারিত পুরস্কার আপনার একাউন্টে যোগ হবে। খেলার নিয়মাবলী প্রতিটি টুর্নামেন্টের বিবরণে দেওয়া থাকে।</p></div> </div>
+                 </div>
+             </section>
+
+             <section class="cta angled-top" id="cta-section">
+                 <div class="container" data-aos="zoom-in">
+                     <h2>এখনই Ludo Top1 ডাউনলোড করুন!</h2>
+                     <p>বাংলাদেশের সবচেয়ে জনপ্রিয় এবং নির্ভরযোগ্য লুডো টুর্নামেন্ট অ্যাপে যোগ দিন এবং আপনার দক্ষতা দিয়ে জিতে নিন আকর্ষণীয় সব পুরস্কার!</p>
+                     <a href="https://ludotop1.fun/Ludo%20Top1.apk" class="btn-download" download="Ludo Top1.apk"><i class="fas fa-download"></i> অ্যাপ ডাউনলোড করুন</a>
+                 </div>
+             </section>
+        </main>
+
+        <footer class="textured-bg-dark">
+            <div class="container">
+                <p>© <span id="copyright-year"></span> Ludo Top1. সর্বস্বত্ব সংরক্ষিত।</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCVybjZeWLY2E" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="https://t.me/ludotop1fun" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="mailto:support@ludotop1.fun" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="floating-action-buttons">
+            <div class="floating-btn-wrapper">
+                <span class="floating-btn-text" id="telegram-text">নতুন নতুন আপডেট পাওয়ার জন্য টেলিগ্রাম চ্যানেলে জয়েন করুন</span>
+                <a href="https://t.me/ludotop1fun" class="floating-btn telegram-btn" target="_blank" rel="noopener noreferrer" aria-label="Join Telegram Channel"> <i class="fab fa-telegram-plane"></i> </a>
+            </div>
+            <div class="floating-btn-wrapper">
+                 <span class="floating-btn-text" id="whatsapp-text">যেকোনো সমস্যায় আমাদের সাথে যোগাযোগ করুন</span>
+                <a href="https://wa.me/8801325328613" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"> <i class="fab fa-whatsapp"></i> </a>
+            </div>
+        </div>
+    </div> <!-- End of .main-content-wrapper -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loaderOverlay = document.querySelector('.premium-loader-overlay');
+            const mainContentWrapper = document.querySelector('.main-content-wrapper');
+            const steps = document.querySelectorAll('.premium-loader-content .loader-step');
+            const loaderBgImage = document.querySelector('.premium-loader-bg-image');
+
+
+            // Parallax effect for loader background image
+            if (loaderOverlay && loaderBgImage) {
+                loaderOverlay.addEventListener('mousemove', function(e) {
+                    const xAxis = (window.innerWidth / 2 - e.pageX) / 25; // Adjust 25 for sensitivity
+                    const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+                    loaderBgImage.style.transform = `translateX(${xAxis}px) translateY(${yAxis}px) scale(1.1)`; // Scale up slightly
+                });
+                 loaderOverlay.addEventListener('mouseleave', function() {
+                    loaderBgImage.style.transform = 'translateX(0) translateY(0) scale(1.1)'; // Reset on mouse leave
+                });
+            }
+
+
+            const stepDurations = [ 2200, 2800, 3000, 2000 ];
+            let currentStep = 0;
+            const totalLoaderTime = stepDurations.reduce((a, b) => a + b, 0) + 800;
+
+            function showNextLoaderStep() {
+                steps.forEach(step => step.classList.remove('active-step'));
+                if (currentStep < steps.length) {
+                    const currentStepElement = steps[currentStep];
+                    currentStepElement.classList.add('active-step');
+                    setTimeout(showNextLoaderStep, stepDurations[currentStep]);
+                    currentStep++;
+                }
+            }
+
+            if (loaderOverlay && mainContentWrapper && steps.length > 0) {
+                document.body.classList.add('loading');
+                if(mainContentWrapper) mainContentWrapper.style.opacity = '0';
+                showNextLoaderStep();
+                setTimeout(() => {
+                    loaderOverlay.classList.remove('active');
+                    document.body.classList.remove('loading');
+                    if(mainContentWrapper) mainContentWrapper.style.opacity = '1';
+                    if (typeof AOS !== 'undefined') {
+                        AOS.init({
+                            once: false, duration: 700,
+                            offset: 100, easing: 'ease-out-cubic'
+                        });
+                    }
+                }, totalLoaderTime);
+            } else {
+                document.body.classList.remove('loading');
+                if(mainContentWrapper) mainContentWrapper.style.opacity = '1';
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({ once: false, duration: 700, offset: 100, easing: 'ease-out-cubic' });
+                }
+            }
+
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = document.getElementById(question.getAttribute('aria-controls'));
+                    const isActive = question.classList.contains('active');
+                    faqQuestions.forEach(q => {
+                        if (q !== question && q.classList.contains('active')) {
+                            q.classList.remove('active');
+                            q.setAttribute('aria-expanded', 'false');
+                            const ans = document.getElementById(q.getAttribute('aria-controls'));
+                            if (ans) ans.classList.remove('active-answer');
+                        }
+                    });
+                    question.classList.toggle('active');
+                    question.setAttribute('aria-expanded', String(!isActive));
+                    if (answer) answer.classList.toggle('active-answer');
+                });
+                question.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); question.click(); }
+                });
+            });
+
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const imagesForModal = document.querySelectorAll('.gallery-image, .showcase-image');
+            const modalCloseBtn = document.getElementById('modalCloseBtn');
+            let previouslyFocusedElement = null;
+
+            function openModal(imgElement) {
+                if (modal && modalImg) {
+                    previouslyFocusedElement = document.activeElement;
+                    modalImg.src = imgElement.src; modalImg.alt = imgElement.alt;
+                    modal.classList.add('active'); document.body.style.overflow = 'hidden';
+                    if(modalCloseBtn) modalCloseBtn.focus();
+                }
+            }
+            function closeModal() {
+                if (modal) {
+                    modal.classList.remove('active'); document.body.style.overflow = '';
+                    if (previouslyFocusedElement && typeof previouslyFocusedElement.focus === 'function') {
+                        previouslyFocusedElement.focus();
+                    }
+                }
+            }
+            imagesForModal.forEach(img => {
+                const clickableElement = img.classList.contains('showcase-image') ? img.closest('.showcase-item-wrapper') : img;
+                clickableElement.addEventListener('click', function() { openModal(img); });
+                clickableElement.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openModal(img); }
+                });
+            });
+            if (modalCloseBtn) {
+                modalCloseBtn.addEventListener('click', closeModal);
+                modalCloseBtn.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); closeModal(); }
+                });
+            }
+            if (modal) {
+                modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+            }
+            document.addEventListener('keydown', (event) => {
+                if (event.key === "Escape" && modal && modal.classList.contains('active')) closeModal();
+            });
+
+            const yearSpan = document.getElementById('copyright-year');
+            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            const statsSection = document.getElementById('stats-section');
+            function animateValue(element, start, end, duration, decimals = 0) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const easeOutProgress = 1 - Math.pow(1 - progress, 4);
+                    let currentVal = easeOutProgress * (end - start) + start;
+                    element.textContent = currentVal.toLocaleString('bn-BD', {
+                        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                    });
+                    if (progress < 1) window.requestAnimationFrame(step);
+                    else element.textContent = end.toLocaleString('bn-BD', {
+                        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                    });
+                };
+                window.requestAnimationFrame(step);
+            }
+            if (statsSection) {
+                const statsObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const statNumbers = entry.target.querySelectorAll('.stat-number');
+                            statNumbers.forEach(numberElement => {
+                                // Removed the dataset.animated check to allow re-animation
+                                const decimals = parseInt(numberElement.getAttribute('data-decimal') || '0');
+                                numberElement.textContent = (0).toLocaleString('bn-BD', {
+                                    minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                                });
+                                const target = parseFloat(numberElement.getAttribute('data-target').replace(/,/g, ''));
+                                if (!isNaN(target)) {
+                                    animateValue(numberElement, 0, target, 6000, decimals); // Duration changed to 6000ms
+                                }
+                            });
+                        }
+                    });
+                }, { threshold: 0.05 }); // Threshold changed to 0.05 (5%)
+                statsObserver.observe(statsSection);
+            }
+
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            if (menuToggle && mainNav) {
+                const navLinks = mainNav.querySelectorAll('a');
+                menuToggle.addEventListener('click', () => {
+                    const isActive = mainNav.classList.contains('active');
+                    mainNav.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                    menuToggle.setAttribute('aria-expanded', String(!isActive));
+                    menuToggle.setAttribute('aria-label', isActive ? 'মেনু খুলুন' : 'মেনু বন্ধ করুন');
+                    document.body.classList.toggle('menu-open', !isActive);
+                    if (!isActive) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                    if (isActive && menuToggle) menuToggle.focus();
+                });
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (mainNav.classList.contains('active')) {
+                            mainNav.classList.remove('active');
+                            menuToggle.classList.remove('active');
+                            menuToggle.setAttribute('aria-expanded', 'false');
+                            menuToggle.setAttribute('aria-label', 'মেনু খুলুন');
+                            document.body.classList.remove('menu-open');
+                            document.body.style.overflow = '';
+                            if(menuToggle) menuToggle.focus();
+                        }
+                    });
+                });
+                document.addEventListener('click', (event) => {
+                    if (mainNav.classList.contains('active') &&
+                        !mainNav.contains(event.target) &&
+                        !menuToggle.contains(event.target)) {
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.setAttribute('aria-label', 'মেনু খুলুন');
+                        document.body.classList.remove('menu-open');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => { if (typeof AOS !== 'undefined') AOS.refresh(); }, 100);
+            });
+            window.addEventListener('orientationchange', () => { if (typeof AOS !== 'undefined') AOS.refresh(); });
+        });
+     </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/68224d5244abcc190d9486d8/default'; // আপনার সঠিক Tawk.to Property ID ব্যবহার করুন
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
